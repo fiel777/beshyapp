@@ -25,7 +25,6 @@ function Navbar() {
 
   useEffect(() => {
     localStorage.setItem("theme", JSON.stringify(theme));
-    document.documentElement.setAttribute("data-theme", theme);
 
     theme === "dark"
       ? document.documentElement.classList.add("dark")
@@ -65,10 +64,8 @@ function Navbar() {
             className={` w-screen h-screen bg-white/30 dark:bg-slate-800/60 backdrop-blur-sm relative z-30`}
             ref={closeRef}
           >
-            <div className=" shadow-md  bg-white w-9/12 max-w-sm h-screen dark:bg-slate-900  flex items-center justify-center relative -z-20  ">
-              <span className="dark:text-white ">
-                Lorem ipsum dolor sit amet.
-              </span>
+            <div className=" shadow-md  bg-white w-9/12 max-w-sm h-screen dark:bg-slate-900  flex items-center justify-center relative -z-2 ">
+              <span className="dark:text-white ">beshy fiel</span>
             </div>
           </div>
         </div>
