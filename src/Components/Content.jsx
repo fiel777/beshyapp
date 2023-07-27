@@ -36,6 +36,7 @@ function Content() {
     document.body.appendChild(message);
 
     if (output <= 0) {
+      document.body.removeChild(message);
       errorNotify();
     } else {
       message.select();
