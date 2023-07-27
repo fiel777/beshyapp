@@ -60,13 +60,13 @@ function Content() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 0);
   }, []);
 
   return (
     <>
       {isloading ? (
-        <p className="py-0 text-center h-full flex justify-center items-center">
+        <p className="py-0 text-center h-full flex justify-center items-center dark:text-white">
           Loading...
         </p>
       ) : (
@@ -106,8 +106,9 @@ function Content() {
                     rows={4}
                     spellCheck="false"
                     value={output}
+                    disabled={true}
                     onChange={secondHandleText}
-                    className="w-full p-2.5 text-sm text-gray-800 bg-white/75 border-2 rounded-sm outline-none select-none pointer-events-none dark:bg-gray-700 dark:text-white border-none   "
+                    className="w-full p-2.5 text-sm text-gray-800 bg-white/75 border-2 rounded-sm outline-none   overflow-auto dark:bg-gray-700 dark:text-white border-none   "
                   ></textarea>
                   <div
                     className=" cursor-pointer text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-600 flex justify-end absolute  bottom-0 right-[-7.5px] hover:scale-125 duration-150 ease-in-out select-none  hover:text-emerald-800 "
