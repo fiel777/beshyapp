@@ -8,7 +8,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Content />
+      <div className='dark:bg-slate-900 h-screen '>
+        <Content />
+      </div>
 
 
     </>
