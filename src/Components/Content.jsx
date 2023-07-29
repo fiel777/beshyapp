@@ -78,7 +78,7 @@ function Content() {
                 src="https://picsum.photos/1920/1080.webp"
                 alt="image"
                 loading="lazy"
-                className="h-[10rem]w-full max-w-full md:h-full rounded-sm"
+                className="h-[10rem]w-full max-w-full md:h-full rounded-sm object-cover"
               ></img>
             </div>
             <div className="flex-1 p-4  bg-gray-100 dark:bg-slate-800  shadow-sm ">
