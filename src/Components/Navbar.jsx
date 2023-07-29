@@ -65,7 +65,7 @@ function Navbar() {
             ref={closeRef}
           >
             <div className=" shadow-md  bg-white w-9/12 max-w-sm h-screen dark:bg-slate-900  flex items-center justify-center relative -z-2 ">
-              <span className="dark:text-white "> Developed by: fiel</span>
+              <span className="dark:text-white ">fiel</span>
             </div>
           </div>
         </div>
