@@ -7,6 +7,7 @@ import { MdDarkMode } from "react-icons/md";
 function Navbar() {
   const [bar, setbar] = useState(false);
   const closeRef = useRef();
+
   const [theme, setTheme] = useState(JSON.parse(localStorage.getItem("theme")));
 
   const toggletheme = () => {
@@ -49,9 +50,9 @@ function Navbar() {
           <button className="cursor-pointer " onClick={toggletheme}>
             {" "}
             {theme === "dark" ? (
-              <MdDarkMode size={25} style={{ color: "#ffffff" }} />
-            ) : (
               <MdLightMode size={25} style={{ color: "#eab308" }} />
+            ) : (
+              <MdDarkMode size={25} style={{ color: "#000" }} />
             )}
           </button>
         </div>
